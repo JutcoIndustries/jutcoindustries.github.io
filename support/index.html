@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Jutco Industries</title>
+  <meta name="description" content="Get help with Gist and other Jutco Industries apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="logo">Jutco Industries</a>
+    <nav class="site-nav">
+      <a href="/gist">Gist</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <h1>Support</h1>
+    <p class="page-subtitle">Need help? Reach us at <a href="mailto:support@jutco.net">support@jutco.net</a></p>
+
+    <h2>Gist — Frequently Asked Questions</h2>
+
+    <div class="faq-item" open>
+      <details>
+        <summary>Will Gist work without an internet connection?</summary>
+        <div class="faq-answer">
+          <p>Yes. Gist works entirely offline. All file analysis and name generation happen on your Mac using Apple's on-device frameworks. No internet connection is required at any point. You can use Gist on a plane, in a cabin, or with Wi-Fi turned off.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What happens if Apple Intelligence is not available?</summary>
+        <div class="faq-answer">
+          <p>Gist requires Apple Intelligence to be enabled on your Mac. If it is not available, Gist will display an explanation screen and will not proceed to the main interface.</p>
+          <p>To enable Apple Intelligence: open System Settings > Apple Intelligence & Siri and follow the setup prompts. Apple Intelligence requires a Mac with Apple silicon (M1 or newer) running macOS 26 Tahoe or later.</p>
+          <p>If the model shows as "not ready," wait a few minutes for initial setup to complete, then relaunch Gist.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>"Apple Intelligence Unavailable" error</summary>
+        <div class="faq-answer">
+          <p>This means Apple Intelligence is either not enabled or not finished setting up on your Mac. See the question above for instructions.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>The suggested filename is generic or wrong</summary>
+        <div class="faq-answer">
+          <p>Some files have minimal extractable content — for example, scanned images without readable text, or encrypted PDFs. Gist's suggestions are based on what it can read from the file.</p>
+          <p>You can edit any suggested name directly in the Suggested Names pane before applying. Click the name text to edit it.</p>
+          <p>If you consistently see poor suggestions for a particular file type, please email us at <a href="mailto:support@jutco.net">support@jutco.net</a> with an example (or a description of the file type) so we can improve future versions.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>A file type I dropped was ignored</summary>
+        <div class="faq-answer">
+          <p>Gist currently supports: PDF, PNG, JPEG, HEIC, plain text (.txt), RTF, Markdown (.md), and CSV.</p>
+          <p>Other formats (DOCX, XLSX, GIF, TIFF, video, audio, etc.) are not yet supported. We plan to expand file type support in future updates. If Gist skips files you dropped, they were likely in an unsupported format.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How do I undo a rename?</summary>
+        <div class="faq-answer">
+          <p>Two ways:</p>
+          <ul>
+            <li><strong>Immediately after renaming:</strong> Use Edit > Undo Rename (Cmd+Z) or click the Undo button in the toolbar.</li>
+            <li><strong>Later (even after quitting):</strong> Open the History pane (Shift+Cmd+H or View > Show History) and click "Undo" on any batch entry.</li>
+          </ul>
+          <p>Undo works by moving files back to their original names. If the original file has been moved or deleted since renaming, undo may not succeed for that file.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Permission error when renaming</summary>
+        <div class="faq-answer">
+          <p>macOS sandboxing requires Gist to have explicit access to each file. If you see a permission error:</p>
+          <ul>
+            <li>Re-add the file using the + button or drag it fresh from Finder. This re-grants Gist sandboxed access.</li>
+            <li>If renaming files inside a folder, make sure you granted access to the folder (not just individual files).</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Where is my rename history stored?</summary>
+        <div class="faq-answer">
+          <p>Locally inside Gist's sandboxed container:</p>
+          <p><code>~/Library/Containers/com.computarmachine.Gist/Data/Library/Application Support/Gist/rename_history.json</code></p>
+          <p>This file is never sent off your device. You can clear all history from the History pane using the "Clear" button.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Slow processing on large batches</summary>
+        <div class="faq-answer">
+          <p>Large PDFs (50+ pages) and batches of 100+ files take longer to process. Tips:</p>
+          <ul>
+            <li>Process files in smaller batches (20–30 at a time)</li>
+            <li>Increase concurrent analyses in Settings > Processing</li>
+            <li>Close other resource-intensive applications</li>
+          </ul>
+          <p>Processing speed depends on your Mac's Apple silicon chip. M1 Pro/Max/Ultra and newer chips will be noticeably faster.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="contact-block">
+      <p>Question not answered here?</p>
+      <a href="mailto:support@jutco.net">Email us at support@jutco.net</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/support">Support</a>
+      <a href="mailto:hello@jutco.net">Contact</a>
+    </div>
+    <span>&copy; 2026 Jutco Industries LLC</span>
+    <p class="footer-trademark">Apple, Apple Intelligence, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  </footer>
+
+</body>
+</html>

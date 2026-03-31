@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gist — AI File Renamer for Mac</title>
+  <meta name="description" content="Gist uses on-device Apple Intelligence to analyze your documents and suggest descriptive filenames. No cloud. No setup. Just drag, drop, done.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="logo">Jutco Industries</a>
+    <nav class="site-nav">
+      <a href="/gist">Gist</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="gist-hero">
+    <svg class="app-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+      <defs>
+        <clipPath id="squircle"><path d="M 512 0 C 764 0, 880 0, 952 72 C 1024 144, 1024 260, 1024 512 C 1024 764, 1024 880, 952 952 C 880 1024, 764 1024, 512 1024 C 260 1024, 144 1024, 72 952 C 0 880, 0 764, 0 512 C 0 260, 0 144, 72 72 C 144 0, 260 0, 512 0 Z"/></clipPath>
+        <linearGradient id="bgGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#4C1D95"/><stop offset="35%" stop-color="#5B21B6"/><stop offset="65%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+        <radialGradient id="light" cx="0.7" cy="0.25" r="0.55"><stop offset="0%" stop-color="#A78BFA" stop-opacity="0.28"/><stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+        <radialGradient id="vignette" cx="0.5" cy="0.48" r="0.65"><stop offset="0%" stop-color="#7C3AED" stop-opacity="0"/><stop offset="100%" stop-color="#2E1065" stop-opacity="0.3"/></radialGradient>
+      </defs>
+      <g clip-path="url(#squircle)">
+        <rect width="1024" height="1024" fill="url(#bgGrad)"/>
+        <rect width="1024" height="1024" fill="url(#light)"/>
+        <rect width="1024" height="1024" fill="url(#vignette)"/>
+        <path fill="#FFFFFF" d="M 692 516 L 692 650 C 692 660, 688 670, 680 680 C 640 728, 570 770, 490 770 C 350 770, 210 660, 210 512 C 210 364, 350 254, 490 254 C 570 254, 630 280, 668 308 C 680 318, 680 334, 670 344 L 646 368 C 636 378, 622 378, 610 370 C 580 346, 540 332, 490 332 C 396 332, 310 410, 310 512 C 310 614, 396 692, 490 692 C 540 692, 574 674, 600 652 L 600 592 L 520 592 C 504 592, 494 582, 494 566 L 494 540 C 494 524, 504 516, 520 516 Z"/>
+      </g>
+    </svg>
+
+    <h1>Get the Gist.</h1>
+    <p class="subhead">Your files know what they are. Gist reads them and builds the filename to prove it — entirely on your Mac.</p>
+    <span class="pill">Coming soon to the Mac App Store</span>
+    <p class="system-req">macOS 26 Tahoe &middot; Apple Silicon &middot; $7.99 one-time purchase</p>
+  </section>
+
+  <div class="container">
+
+    <!-- Before/After -->
+    <section class="section">
+      <h2>From chaos to clarity.</h2>
+      <table class="rename-table">
+        <thead>
+          <tr><th>Before</th><th>After</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="before">scan_20260115.pdf</td><td class="after">2026-01 Apple Card Statement.pdf</td></tr>
+          <tr><td class="before">IMG_4392.jpg</td><td class="after">Cat on Kitchen Table.jpg</td></tr>
+          <tr><td class="before">Screenshot 2026-02-15 at 6.46.55 PM.png</td><td class="after">TOTO DuoFit Wall Tank System Manual.png</td></tr>
+          <tr><td class="before">report_final_v3.txt</td><td class="after">2026-02 Q4 Budget Review.txt</td></tr>
+        </tbody>
+      </table>
+      <p class="section-body">Drop files onto Gist. Review the suggestions. Rename with one click.</p>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section">
+      <h2>Your files never leave your Mac.</h2>
+      <p class="section-body">Gist is built with Apple Intelligence. All processing — text extraction, image recognition, name generation — happens on your Mac using Apple's on-device frameworks. No internet connection. No cloud uploads. No API keys. No accounts. No telemetry.</p>
+      <p class="section-body">Your bank statements, tax documents, medical records, and personal photos stay exactly where they are.</p>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+      <h2>Heavy code. Light model.</h2>
+      <p class="section-body">Most AI rename tools send your files to a language model and hope for the best. Gist takes a different approach.</p>
+      <p class="section-body">An eight-step deterministic pipeline handles the heavy lifting: extracting dates from financial document headers, identifying organizations using Natural Language Processing, detecting document types from PDF metadata and content structure. The on-device Apple Intelligence model is called only as a last resort — when code-side analysis produces a low-confidence result.</p>
+      <p class="section-body">The result: consistent, sortable filenames you can trust.</p>
+
+      <div class="three-col">
+        <div class="col">
+          <h3>Date</h3>
+          <p>Scored extraction from document text. "Statement date" beats "due date." Images never get dates — OCR dates are unreliable.</p>
+        </div>
+        <div class="col">
+          <h3>Organization</h3>
+          <p>Header-first detection for financial documents. NLP entity extraction from the first few lines only. No merchant names from transaction tables.</p>
+        </div>
+        <div class="col">
+          <h3>Subject</h3>
+          <p>Eight-step cascade from PDF title to image labels. Code handles the common cases. Apple Intelligence handles the edge cases.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <h2>Everything you need. Nothing you don't.</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Drag and drop</h3>
+          <p>Drop files from Finder or click to browse. Folders supported up to 5 levels deep.</p>
+        </div>
+        <div class="feature">
+          <h3>Batch processing</h3>
+          <p>Analyze dozens of files at once with parallel processing.</p>
+        </div>
+        <div class="feature">
+          <h3>Financial intelligence</h3>
+          <p>Bank statements, credit cards, and utility bills detected and named with date, institution, and account type.</p>
+        </div>
+        <div class="feature">
+          <h3>Edit before applying</h3>
+          <p>Every suggestion is editable. Change a word, rewrite the whole thing, or accept as-is.</p>
+        </div>
+        <div class="feature">
+          <h3>Persistent history</h3>
+          <p>Every rename is logged. Undo any batch, even after quitting and relaunching.</p>
+        </div>
+        <div class="feature">
+          <h3>Confirmation dialogs</h3>
+          <p>Nothing is renamed without your explicit approval.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supported Files -->
+    <section class="section">
+      <h2>What Gist can read.</h2>
+      <div class="file-types">
+        <p><strong>Documents:</strong> PDF (embedded text and scanned pages via OCR), plain text, RTF, Markdown, CSV</p>
+        <p><strong>Images:</strong> PNG, JPEG, HEIC (object recognition + OCR on visible text)</p>
+        <p style="margin-top:0.75rem;font-size:0.8rem;color:var(--text-faint);">More file types coming in future updates.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section">
+      <h2>One price. No surprises.</h2>
+      <div class="pricing-block">
+        <div class="price">$7.99</div>
+        <p class="price-note">One-time purchase from the Mac App Store.<br>No subscription. No in-app purchases. No usage limits.</p>
+      </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section">
+      <h2>Requirements</h2>
+      <div class="section-body">
+        <p>macOS 26 Tahoe or later<br>
+        Mac with Apple silicon (M1 or newer)<br>
+        Apple Intelligence enabled (System Settings > Apple Intelligence & Siri)<br>
+        No internet connection required</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/support">Support</a>
+      <a href="mailto:support@jutco.net">Contact</a>
+    </div>
+    <span>Gist is developed by <a href="/">Jutco Industries LLC</a></span>
+    <p class="footer-trademark">Apple, Apple Intelligence, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  </footer>
+
+</body>
+</html>
