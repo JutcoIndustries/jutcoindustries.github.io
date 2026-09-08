@@ -40,9 +40,9 @@
       <details>
         <summary>What happens if Apple Intelligence is not available?</summary>
         <div class="faq-answer">
-          <p>Gist requires Apple Intelligence to be enabled on your Mac. If it is not available, Gist will display an explanation screen and will not proceed to the main interface.</p>
-          <p>To enable Apple Intelligence: open System Settings > Apple Intelligence & Siri and follow the setup prompts. Apple Intelligence requires a Mac with Apple silicon (M1 or newer) running macOS 26 Tahoe or later.</p>
-          <p>If the model shows as "not ready," wait a few minutes for initial setup to complete, then relaunch Gist.</p>
+          <p>Gist needs Apple Intelligence to suggest names. If it is not available, Gist shows an explanation with a button that opens System Settings. You can still continue into the app, but files you add will show a per-file error until Apple Intelligence is enabled.</p>
+          <p>To enable Apple Intelligence: open System Settings > Apple Intelligence & Siri and follow the setup prompts. Gist requires a Mac with Apple silicon (M1 or newer) running macOS 26.2 or later.</p>
+          <p>If the model shows as "still setting up," the on-device model is still downloading. This can take several minutes. Gist re-checks automatically when you return to it; you can also click "Check Again." No relaunch is needed.</p>
         </div>
       </details>
     </div>
@@ -61,7 +61,7 @@
         <summary>The suggested filename is generic or wrong</summary>
         <div class="faq-answer">
           <p>Some files have minimal extractable content — for example, scanned images without readable text, or encrypted PDFs. Gist's suggestions are based on what it can read from the file.</p>
-          <p>You can edit any suggested name directly in the Suggested Names pane before applying. Click the name text to edit it.</p>
+          <p>You can edit any suggested name directly in its card before applying. Click the name to edit it, and use Reset to bring the suggestion back.</p>
           <p>If you consistently see poor suggestions for a particular file type, please email us at <a href="mailto:support@jutco.net">support@jutco.net</a> with an example (or a description of the file type) so we can improve future versions.</p>
         </div>
       </details>
@@ -83,8 +83,8 @@
         <div class="faq-answer">
           <p>Two ways:</p>
           <ul>
-            <li><strong>Immediately after renaming:</strong> Use Edit > Undo Rename (Cmd+Z) or click the Undo button in the toolbar.</li>
-            <li><strong>Later (even after quitting):</strong> Open the History pane (Shift+Cmd+H or View > Show History) and click "Undo" on any batch entry.</li>
+            <li><strong>Immediately after renaming:</strong> Click "Undo all" on the Done screen, or use Edit > Undo Rename.</li>
+            <li><strong>Later (even after quitting):</strong> Open the History screen (Shift+Cmd+H or View > Show History) and click "Undo batch" on any entry.</li>
           </ul>
           <p>Undo works by moving files back to their original names. If the original file has been moved or deleted since renaming, undo may not succeed for that file.</p>
         </div>
@@ -95,10 +95,10 @@
       <details>
         <summary>Permission error when renaming</summary>
         <div class="faq-answer">
-          <p>macOS sandboxing requires Gist to have explicit access to each file. If you see a permission error:</p>
+          <p>macOS sandboxing requires Gist to have explicit access to each file, and to the folder it lives in before it can rename it. The first time you rename a file in a folder, Gist shows a folder-access panel already pointed at that folder; click "Grant Access." Gist remembers the folder so you are not asked again. If you see a permission error:</p>
           <ul>
-            <li>Re-add the file using the + button or drag it fresh from Finder. This re-grants Gist sandboxed access.</li>
-            <li>If renaming files inside a folder, make sure you granted access to the folder (not just individual files).</li>
+            <li>Re-add the file using the + button or drag it fresh from Finder, then apply again. This re-grants Gist sandboxed access.</li>
+            <li>When the folder-access panel appears, click "Grant Access" rather than Cancel.</li>
           </ul>
         </div>
       </details>
@@ -109,8 +109,8 @@
         <summary>Where is my rename history stored?</summary>
         <div class="faq-answer">
           <p>Locally inside Gist's sandboxed container:</p>
-          <p><code>~/Library/Containers/com.computarmachine.Gist/Data/Library/Application Support/Gist/rename_history.json</code></p>
-          <p>This file is never sent off your device. You can clear all history from the History pane using the "Clear" button.</p>
+          <p><code>~/Library/Containers/com.jutcoindustries.Gist/Data/Library/Application Support/Gist/rename_history.json</code></p>
+          <p>This file is never sent off your device. You can clear all history from the History screen using "Clear History."</p>
         </div>
       </details>
     </div>
@@ -143,7 +143,7 @@
       <a href="mailto:hello@jutco.net">Contact</a>
     </div>
     <span>&copy; 2026 Jutco Industries LLC</span>
-    <p class="footer-trademark">Apple, Apple Intelligence, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+    <p class="footer-trademark">Apple and macOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence is a trademark of Apple Inc.</p>
   </footer>
 
 </body>

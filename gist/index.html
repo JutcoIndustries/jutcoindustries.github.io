@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gist — AI File Renamer for Mac</title>
+  <title>Gist Renamer — AI File Naming for Mac</title>
   <meta name="description" content="Gist uses on-device Apple Intelligence to analyze your documents and suggest descriptive filenames. No cloud. No setup. Just drag, drop, done.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +40,8 @@
 
     <h1>Get the Gist.</h1>
     <p class="subhead">Your files know what they are. Gist reads them and builds the filename to prove it — entirely on your Mac.</p>
-    <span class="pill">Coming soon to the Mac App Store</span>
-    <p class="system-req">macOS 26 Tahoe &middot; Apple Silicon &middot; $7.99 one-time purchase</p>
+    <span class="pill">Coming soon to the Mac App Store as Gist Renamer</span>
+    <p class="system-req">macOS 26.2 or later &middot; Apple silicon &middot; $7.99 one-time purchase</p>
   </section>
 
   <div class="container">
@@ -54,7 +54,7 @@
           <tr><th>Before</th><th>After</th></tr>
         </thead>
         <tbody>
-          <tr><td class="before">scan_20260115.pdf</td><td class="after">2026-01 Apple Card Statement.pdf</td></tr>
+          <tr><td class="before">scan_20260115.pdf</td><td class="after">2026-01 Apple Card.pdf</td></tr>
           <tr><td class="before">IMG_4392.jpg</td><td class="after">Cat on Kitchen Table.jpg</td></tr>
           <tr><td class="before">Screenshot 2026-02-15 at 6.46.55 PM.png</td><td class="after">TOTO DuoFit Wall Tank System Manual.png</td></tr>
           <tr><td class="before">report_final_v3.txt</td><td class="after">2026-02 Q4 Budget Review.txt</td></tr>
@@ -66,7 +66,7 @@
     <!-- Privacy -->
     <section class="section">
       <h2>Your files never leave your Mac.</h2>
-      <p class="section-body">Gist is built with Apple Intelligence. All processing — text extraction, image recognition, name generation — happens on your Mac using Apple's on-device frameworks. No internet connection. No cloud uploads. No API keys. No accounts. No telemetry.</p>
+      <p class="section-body">Gist works with Apple Intelligence. All processing — text extraction, image recognition, name generation — happens on your Mac using Apple's on-device frameworks. No internet connection. No cloud uploads. No API keys. No accounts. No telemetry.</p>
       <p class="section-body">Your bank statements, tax documents, medical records, and personal photos stay exactly where they are.</p>
     </section>
 
@@ -74,13 +74,13 @@
     <section class="section">
       <h2>Heavy code. Light model.</h2>
       <p class="section-body">Most AI rename tools send your files to a language model and hope for the best. Gist takes a different approach.</p>
-      <p class="section-body">An eight-step deterministic pipeline handles the heavy lifting: extracting dates from financial document headers, identifying organizations using Natural Language Processing, detecting document types from PDF metadata and content structure. The on-device Apple Intelligence model is called only as a last resort — when code-side analysis produces a low-confidence result.</p>
+      <p class="section-body">A deterministic pipeline of scored extractors handles the heavy lifting: extracting dates from financial document headers, identifying organizations using Natural Language Processing, detecting document types from PDF metadata and content structure. The on-device Apple Intelligence model is consulted only when code-side analysis produces a weak result, and even then it chooses among options the code provides.</p>
       <p class="section-body">The result: consistent, sortable filenames you can trust.</p>
 
       <div class="three-col">
         <div class="col">
           <h3>Date</h3>
-          <p>Scored extraction from document text. "Statement date" beats "due date." Images never get dates — OCR dates are unreliable.</p>
+          <p>Scored extraction from document text. "Statement date" beats "due date." Photos use their capture date; screenshots never get unreliable OCR dates.</p>
         </div>
         <div class="col">
           <h3>Organization</h3>
@@ -88,7 +88,7 @@
         </div>
         <div class="col">
           <h3>Subject</h3>
-          <p>Eight-step cascade from PDF title to image labels. Code handles the common cases. Apple Intelligence handles the edge cases.</p>
+          <p>Every extractor, from PDF title to image labels, produces a scored candidate and the strongest wins. Code handles the common cases. Apple Intelligence handles the edge cases.</p>
         </div>
       </div>
     </section>
@@ -147,7 +147,7 @@
     <section class="section">
       <h2>Requirements</h2>
       <div class="section-body">
-        <p>macOS 26 Tahoe or later<br>
+        <p>macOS 26.2 or later<br>
         Mac with Apple silicon (M1 or newer)<br>
         Apple Intelligence enabled (System Settings > Apple Intelligence & Siri)<br>
         No internet connection required</p>
@@ -163,7 +163,7 @@
       <a href="mailto:support@jutco.net">Contact</a>
     </div>
     <span>Gist is developed by <a href="/">Jutco Industries LLC</a></span>
-    <p class="footer-trademark">Apple, Apple Intelligence, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+    <p class="footer-trademark">Apple and macOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence is a trademark of Apple Inc.</p>
   </footer>
 
 </body>
