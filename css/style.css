@@ -336,6 +336,22 @@ a:hover { text-decoration: underline; }
   margin: 0 auto 2rem;
   line-height: 1.5;
 }
+.store-button {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.store-button:hover {
+  background: var(--accent-deep);
+  color: #fff;
+}
+
 .pill {
   display: inline-block;
   font-size: 0.85rem;
